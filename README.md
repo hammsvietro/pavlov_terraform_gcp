@@ -1,4 +1,4 @@
-# pavlov_terraform_gcp
+# Pavlov terraform in GCP
 Terraform setup to deploy a pavlov server in Google Cloud Platform.
 
 As of now, GCP gives $300 for 3 months to test their product, this makes it easy to easily set up a pavlov server in a new account (and also to take it down when needed)
@@ -16,8 +16,7 @@ You can read [the server docs](http://wiki.pavlov-vr.com/index.php?title=Dedicat
 
 and also edit `pavlov/RconSettings.txt` to control the server using the Rcon tool, more info below.
 
-
-### Tip
+## Tip
 #### Control the server via Rcon
 [Arctic VR RCON](https://pavlovrcon.com/rcon/) is a good tool to control your server without the need to ssh into the instance.
 
