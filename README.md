@@ -5,6 +5,12 @@ As of now, GCP gives $300 for 3 months to test their product, this makes it easy
 
 ## How to use
 
+Clone this repo with 
+
+```bash
+git clone https://github.com/hammsvietro/pavlov_terraform_gcp
+```
+
 copy the sample vars file and fill the variables with your data
 ```bash
 cp sample.terraform.tfvars terraform.tfvars
