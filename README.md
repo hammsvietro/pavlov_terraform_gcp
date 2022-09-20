@@ -16,6 +16,15 @@ You can read [the server docs](http://wiki.pavlov-vr.com/index.php?title=Dedicat
 
 and also edit `pavlov/RconSettings.txt` to control the server using the Rcon tool, more info below.
 
+Finally, run
+```bash
+terraform apply
+```
+to deploy the server, this will output the ip of your server. You can SSH into it at any time with with
+```bash
+ssh <instance_user>@<outputed_id>
+```
+
 ## Tip
 #### Control the server via Rcon
 [Arctic VR RCON](https://pavlovrcon.com/rcon/) is a good tool to control your server without the need to ssh into the instance.
