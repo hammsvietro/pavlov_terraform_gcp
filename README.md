@@ -1,7 +1,7 @@
 # Pavlov terraform in GCP
 Terraform setup to deploy a pavlov server in Google Cloud Platform.
 
-As of now, GCP gives $300 for 3 months to test their product, this makes it easy to easily set up a pavlov server in a new account (and also to take it down when needed)
+As of now, google gives $300 for 3 months to test their product, this makes it easy to easily set up a pavlov server in a new account (and also to take it down when needed)
 
 ## How to use
 
@@ -28,7 +28,7 @@ terraform apply
 ```
 to deploy the server, this will output the ip of your server. You can SSH into it at any time with with
 ```bash
-ssh <instance_user>@<outputed_id>
+ssh <instance_user>@<outputed_ip>
 ```
 
 ## Tip
