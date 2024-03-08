@@ -1,20 +1,3 @@
-locals {
-  name             = "pavlov-server"
-  machine_type     = "e2-medium"
-  zone             = "southamerica-east1-a"
-  instance_user    = "hammsvietro"
-  project          = "project_id_here"
-  disk_size        = "40"
-  credentials_path = "path to credentials json"
-  private_key_path = "path to private ssh key"
-}
-
-provider "google" {
-  credentials = file(local.credentials_path)
-  project     = local.project
-  zone        = local.zone"
-}
-
 resource "google_compute_instance" "default" {
   name         = local.name
   machine_type = local.machine_type
@@ -70,12 +53,12 @@ resource "google_compute_firewall" "http-server" {
 
   allow {
     protocol = "tcp"
-    ports    = ["9100", "22"]
+    ports    = concat(["9100", "22"], local.tcp_ports)
   }
 
   allow {
     protocol = "udp"
-    ports    = ["7777", "8177"]
+    ports    = concat(["7777", "8177"], local.udp_ports)
   }
 
   source_ranges = ["0.0.0.0/0"]
@@ -88,12 +71,12 @@ resource "google_compute_firewall" "http-server-egress" {
 
   allow {
     protocol = "tcp"
-    ports    = ["9100", "22"]
+    ports    = concat(["9100", "22"], local.tcp_ports)
   }
 
   allow {
     protocol = "udp"
-    ports    = ["7777", "8177"]
+    ports    = concat(["7777", "8177"], local.udp_ports)
   }
 
   source_ranges = ["0.0.0.0/0"]

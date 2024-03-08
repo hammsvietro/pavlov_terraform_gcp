@@ -11,11 +11,7 @@ Clone this repo with
 git clone https://github.com/hammsvietro/pavlov_terraform_gcp
 ```
 
-copy the sample vars file and fill the variables with your data
-```bash
-cp sample.terraform.tfvars terraform.tfvars
-```
-also edit `pavlov/Game.ini`
+Edit `locals.tf` and `pavlov/Game.ini`
 
 You can read [the server docs](http://wiki.pavlov-vr.com/index.php?title=Dedicated_server#Configuring_Game.ini) for more information about Game.ini and other files
 <br><sub>go [here](https://pavlov-ms.vankrupt.com/servers/v1/key) to get an API key.</sub>
