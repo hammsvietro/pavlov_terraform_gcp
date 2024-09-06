@@ -1,5 +1,5 @@
 # Pavlov terraform in GCP
-Terraform setup to deploy a pavlov server in Google Cloud Platform.
+Terraform setup to deploy a [pavlov](https://pavlovwiki.com/index.php/Main_Page) server in Google Cloud Platform.
 
 Google gives $300 for 3 months to test their product, this makes it easy to quickly set up a pavlov server in a new account (and also to take it down when needed)
 
